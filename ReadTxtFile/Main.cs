@@ -19,6 +19,7 @@ namespace ReadTxtFile
                 DefaultExt = "txt",
                 Filter = "txt files (*.txt)|*.txt"
             };
+
             InitializeComponent();
         }
 
