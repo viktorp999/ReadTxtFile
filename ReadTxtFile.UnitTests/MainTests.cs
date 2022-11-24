@@ -16,7 +16,12 @@ namespace ReadTxtFile.UnitTests
         {
             _readfile = new Mock<IReadFile>();
             _main = new Main(_readfile.Object);
-            _text = new string[3] { "A", "B", "C" };
+            _text = new string[3] 
+            {
+                "A",
+                "B",
+                "C" 
+            };
 
             _readfile.Setup(rf => rf.Read("Text.txt")).Returns(new string[3] 
             { 
